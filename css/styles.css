@@ -1,0 +1,162 @@
+*, 
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/*=======================================================
+ Base Styles
+ =======================================================*/
+body {
+    color: #fff;
+    text-align: center;
+    background-color: #0A0C1C;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.476rem;
+}
+
+h1, 
+h2 {
+    font-weight: 700;
+}
+
+span {
+    color: #ab5cdb; 
+}
+
+p {
+    font-weight: 400;
+    color: rgba(255,255,255, 0.75);
+}
+
+/*=======================================================
+ Wrapper Styles
+ =======================================================*/
+.wrapper {
+    width: 88%;
+    max-width: 375px;
+    margin: 50px auto;
+    background-color: #1b1937;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*=======================================================
+ Image Styles
+ =======================================================*/
+.image {
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    background: #ab5cdb url("../images/image-header-mobile.jpg");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center; 
+    border-radius: 15px 15px 0 0;
+}
+
+/*=======================================================
+ Header Styles
+ =======================================================*/
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+    .header__heading {
+        margin-top: 1.5em;
+        margin-bottom: .8em;
+    }
+    .header__paragraph {
+        line-height: 1.8em;
+        margin-bottom: 2em;
+    }
+
+/*=======================================================
+ Stats Styles
+ =======================================================*/
+.stats-section {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .stats__header {
+        margin-bottom: -0.2em;
+    }
+    .stats__paragraph {
+        font-size: 0.823rem;
+        letter-spacing: 0.1em;
+    }
+
+/*=======================================================
+ Media Queries
+ =======================================================*/
+@media only screen and (min-width: 350px) {
+    h1 {
+        font-size: 1.575rem;
+    }
+}
+@media only screen and (min-width: 370px) {
+    h1 {
+        font-size: 1.68rem;
+    }
+}
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 1.793rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        height: 100vh;
+        margin: auto;
+        text-align: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.041rem;
+    }
+
+    h2 {
+        font-size: 1.575rem; 
+    }
+    
+    .wrapper {
+        flex-direction: row-reverse;
+        max-width: 1024px;
+    }
+
+    .image {
+        border-radius: 0 15px 15px 0;
+        width: 45%;
+    }
+
+    main {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+    }
+
+    .stats {
+        padding-right: 4.5em;
+    }
+        .stats-section {
+            flex-direction: row;
+            justify-content: left;
+        }
+}
